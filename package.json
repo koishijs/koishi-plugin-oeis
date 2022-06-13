@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-oeis",
   "description": "Use [OEIS](https://oeis.org) in Koishi",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -21,6 +21,12 @@
   "scripts": {
     "build": "tsc -b"
   },
+  "koishi": {
+    "description": {
+      "en": "Search integer sequences in [OEIS](https://oeis.org)",
+      "zh": "在 [OEIS](https://oeis.org) 中搜索数列信息"
+    }
+  },
   "keywords": [
     "chatbot",
     "koishi",
@@ -32,6 +38,11 @@
     "math"
   ],
   "peerDependencies": {
-    "koishi": "^4.2.0"
+    "koishi": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "koishi": "^4.7.2",
+    "typescript": "^4.7.2"
   }
 }
